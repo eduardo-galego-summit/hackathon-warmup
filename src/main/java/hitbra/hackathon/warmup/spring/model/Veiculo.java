@@ -1,6 +1,7 @@
 package hitbra.hackathon.warmup.spring.model;
 
 import org.springframework.data.annotation.Id;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "veiculos")
@@ -8,10 +9,28 @@ public class Veiculo {
 
     private String marca;
     private String modelo;
-    private Integer ano;
-    private Double valor;
+    private String ano;
+    private Integer valor;
     private String local;
-
+    
+    private String placa;
+    /**
+     * Status de uso do veículo (Novo/Usado/Semi-novo).
+     */
+    private String status;
+    /**
+     * Disponibilidade no sistema. Disponive para compra ou vendido.
+     */
+    private boolean  disponibilidade; 
+    /**
+     * Data de entrada no sistema (aquisição do veículo).
+     */
+    private String dataEntrada;
+    /**
+     * Descrição do veículo.
+     */
+    private String desc;
+    
     @Id
     public String id;
 
@@ -23,6 +42,7 @@ public class Veiculo {
         this.marca = marca;
     }
 
+    
     public String getModelo() {
         return modelo;
     }
@@ -31,22 +51,25 @@ public class Veiculo {
         this.modelo = modelo;
     }
 
-    public Integer getAno() {
+    
+    public String getAno() {
         return ano;
     }
 
-    public void setAno(Integer ano) {
+    public void setAno(String ano) {
         this.ano = ano;
     }
 
-    public Double getValor() {
+    
+    public double getValor() {
         return valor;
     }
 
-    public void setValor(Double valor) {
+    public void setValor(Integer valor) {
         this.valor = valor;
     }
 
+    
     public String getLocal() {
         return local;
     }
@@ -54,4 +77,49 @@ public class Veiculo {
     public void setLocal(String local) {
         this.local = local;
     }
+
+    
+	public String getPlaca() {
+		return placa;
+	}
+
+	public void setPlaca(String placa) {
+		this.placa = placa;
+	}
+
+	
+	public boolean isDisponibilidade() {
+		return disponibilidade;
+	}
+
+	public void setDisponibilidade(boolean disponibilidade) {
+		this.disponibilidade = disponibilidade;
+	}
+
+	
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	
+	public String getDataEntrada() {
+		return dataEntrada;
+	}
+
+	public void setDataEntrada(String dataEntrada) {
+		this.dataEntrada = dataEntrada;
+	}
+
+	
+	public String getDesc() {
+		return desc;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
 }
