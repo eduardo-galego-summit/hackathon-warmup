@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5d407b038a103311591ac791"},"idVeiculo":"5d404dbe87766746902d72fc","dataDeVenda":"25-07-2019","valorDeVenda":"10000","idComprador":"12345678998","nomeComprador":"Bruno Silva"}
+{"_id":{"$oid":"5d4088b18a103311591ace73"},"idVeiculo":"5d404dbe87766746902d72ff","dataDeVenda":"23-07-2019","valorDeVenda":"45000","idComprador":"99855536478","nomeComprador":"Carlos Gomes"}
+{"_id":{"$oid":"5d4089c08a103311591aced8"},"idVeiculo":"5d404dbe87766746902d7300","dataDeVenda":"25-07-2019","valorDeVenda":"32000","idComprador":"91366514732","nomeComprador":"Magali Silva"}
+{"_id":{"$oid":"5d408acf8a103311591acf40"},"idVeiculo":"5d404dbe87766746902d7301","dataDeVenda":"23-05-2019","valorDeVenda":"50000","idComprador":"3692581778","nomeComprador":"Bruna Lombardi"}
+{"_id":{"$oid":"5d408b248a103311591acf60"},"idVeiculo":"5d404dbe87766746902d7302","dataDeVenda":"23-06-2019","valorDeVenda":"80000","idComprador":"85145678998","nomeComprador":"Mona Lisa"}
+{"_id":{"$oid":"5d408b8e8a103311591acf8c"},"idVeiculo":"5d404dbe87766746902d732f","dataDeVenda":"17-04-2019","valorDeVenda":"10000","idComprador":"12347568978","nomeComprador":"Marcel Duchamp"}
