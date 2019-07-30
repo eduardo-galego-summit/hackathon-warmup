@@ -25,7 +25,7 @@ fs.readFile('data/2019.csv', 'utf8', function (err, contents) {
 
 		var obj = csvjson.toObject(contents, {delimiter: ',', quote: '\"'});
 		obj.forEach((item) => {
-			var versions = item.body_styles.split(',');
+			var versions = item.body_styles.split(', ');
 			versions.forEach((version) => {
 				var veiculo = {
 					marca: item.make,
